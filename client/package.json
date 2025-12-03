@@ -1,6 +1,7 @@
 {
   "name": "ctechlit-client",
   "private": true,
+  "homepage": "/CTechLit-Consultancy",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",

@@ -1,5 +1,9 @@
-module.exports = {
-  plugins: [],
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+
+export default defineConfig({
+  plugins: [react()],
+  base: '/CTechLit-Consultancy/',
   server: {
     port: 3000,
     proxy: {
@@ -14,5 +18,10 @@ module.exports = {
         secure: false
       }
     }
+  },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true
   }
-}
+});
